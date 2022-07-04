@@ -2,7 +2,7 @@ import java.util.Scanner;
 class addmatrice{
 	public static void main (String args[]){
 	Scanner s=new Scanner(System.in);
-	int i,f,j;
+	int i,j;
 	System.out.println("Enter number of rows: ");
 	int a=s.nextInt();
 	System.out.println("Enter number of columns: ");
