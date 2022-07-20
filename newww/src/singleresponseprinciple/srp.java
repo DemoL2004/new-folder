@@ -1,0 +1,32 @@
+package singleresponseprinciple;
+
+class top{
+	private String text;
+	public top(String s){
+		text=s;
+	}
+	public String get(){
+		return text;
+	}
+	public void appendtext(String newText){
+		text=text.concat(newText);
+	}
+}
+class textprint{
+	top t;
+	public textprint(top t){
+		this.t=t;
+	}
+	public void printtext(){
+		System.out.println(t.get());
+	}
+}
+public class srp {
+	public static void main(String args[]){
+		top t=new top("Piyush");
+		textprint to=new textprint(t);
+		t.appendtext(" Prakash");
+		to.printtext();
+	}
+
+}

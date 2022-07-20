@@ -1,0 +1,18 @@
+import java.lang.Math;
+import java.util.Scanner;
+public class bitode{
+	public static void main (String args[]){
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter binary number to convert to decimal");
+	int bnum=s.nextInt();
+	int bi=0;
+	int aa,i;
+	int c=0;
+	int arr[]=new int[bnum.length];
+	for (i=0;i<bnum.length())
+	for (i=arr.length-1;i>0;i--){
+		aa=arr[c]*(int)Math.pow(2,i);
+		c++;
+		bi=bi+aa;	
+	}
+	System.out.println(bi);}}

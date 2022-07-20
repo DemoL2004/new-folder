@@ -1,0 +1,50 @@
+package testocp;
+import java.lang.*;
+public class abstract  Baseshape{
+	public double getvolume();
+}
+class cube extends Baseshape{
+	int length;
+	int breadth;
+	int height;
+	
+	public cube(int l,int b,int h){
+		length=l;
+		breadth=b;
+		height=h;	
+	}
+	public double getvolume(){
+		return length*breadth*height;
+	}
+}
+class circle extends Baseshape{
+	int radius;
+	public circle(int r){
+		radius=r;
+	}
+	public double getvolume(){
+		return (Math.PI*radius*radius);
+	}
+	
+}
+class application{
+	public double gettotalvolume(Baseshape BARRAY[]){
+		double volsum=0;
+		for(Baseshape b:BARRAY){
+			volsum+=b.getvolume();
+		}
+		return volsum;
+	}
+}
+public class textocp {
+	public static void main(String args[]){
+		circle cc1=new circle(10);
+		cube c1=new cube(5,2,6);
+		Baseshape b[]=new Baseshape[2];
+		b[0]=c1;
+		b[1]=cc1;
+		application a1=new application();
+		double totalvol=a1.gettotalvolume(b);
+		System.out.println("Volume of circle and cube together is "+totalvol);
+		}
+}

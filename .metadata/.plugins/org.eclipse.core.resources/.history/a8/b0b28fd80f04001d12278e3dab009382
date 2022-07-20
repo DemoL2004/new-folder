@@ -1,0 +1,20 @@
+package p1.p4;
+
+import java.util.Scanner;
+
+public class Student {
+	int sem;
+	int rollno;
+	
+	void setdatas(){
+		Scanner n=new Scanner(System.in);
+		System.out.println("Enter sem");
+		int c=n.nextInt();
+		System.out.println("Enter rollno");
+		int d=n.nextInt();
+		sem=c;
+		rollno=d;
+		
+		
+	}
+}

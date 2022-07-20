@@ -1,0 +1,18 @@
+package object;
+import com.thoughtworks.selenium.*;
+public class count
+{
+public void setUp()throws Exception
+{
+	setUp("http://www.google.com/","*firefox")
+}
+public void testloginlogout()
+{
+	selenium.setSpeed("1000");
+	selenium.open("http://www.google.com/");
+	selenium.waitForPageToLoad("30000");
+	selenium.windowMaximize();
+	int num = selenium.getXpathCount("//p").intValue();
+	System.out.println("the number of option elements presents are"+num);
+}
+}

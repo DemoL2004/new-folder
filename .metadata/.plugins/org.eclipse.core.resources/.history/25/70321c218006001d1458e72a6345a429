@@ -1,0 +1,21 @@
+package neww;
+class animal{
+	void eat(){
+		System.out.println("Eating...");
+	}
+}
+class cat extends animal{
+	void eat(){
+		System.out.println("cat is chewing....");
+	}
+}
+public class testdynamic {
+	public static void main(String args[]){
+		animal a=new cat();
+		cat c=new cat();
+		animal b=new animal();
+		b.eat();//static binding
+		c.eat();//static binding
+		a.eat();//dynamic binding
+	}
+}

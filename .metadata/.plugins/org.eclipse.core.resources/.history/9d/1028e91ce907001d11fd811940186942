@@ -1,0 +1,14 @@
+package parentpack;
+
+import parentpack.p1.student;
+
+public class teststudent {
+
+	public static void main(String[] args) {
+		student n=new student(0
+				6,"Nishan");
+		n.display();
+
+	}
+
+}

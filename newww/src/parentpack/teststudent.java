@@ -1,0 +1,19 @@
+package parentpack;
+
+import parentpack.p1.student;
+class  result extends student{
+	int total;
+	public result(int rl, String ne,int total) {
+		super(rl, ne);//call base class constructor
+		this.total=total;
+		
+	}
+	public void dtotal(){
+		System.out.println("total : "+total);}}
+public class teststudent {
+	public static void main(String[] args) {
+		student n=new student(6,"Nishan");
+		result r1=new result(11,"Ananth",400);
+		n.display();
+		r1.display();
+		r1.dtotal();}}

@@ -1,0 +1,19 @@
+
+public class ed {
+	public static void main(String args[]){
+		int a=10,b=0;
+		int arr[]={10,20,30};
+		try{
+			int y=a/b;
+			for (int i=0;i<5;i++){
+				System.out.println(arr[i]);
+			}
+		}
+		catch (ArithmeticException e){
+			System.out.println("cannot be divided by zero");
+		}
+		catch (ArrayIndexOutOfBoundsException e){
+			System.out.println("Array index not in array");
+		}
+	}
+}
