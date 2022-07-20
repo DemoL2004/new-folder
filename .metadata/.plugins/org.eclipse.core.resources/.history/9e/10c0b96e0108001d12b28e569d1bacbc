@@ -1,0 +1,16 @@
+package neww;
+import javax.swing.*;
+import java.awt.*;
+class guitest{
+    public static void main(String args[]){
+       JFrame frame = new JFrame("lulz");
+       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       frame.setSize(500,450);
+       JButton button = new JButton("bak");
+       JButton nui=new JButton("nui");
+       frame.getContentPane().add(button); // Adds Button to content pane of frame
+       frame.getContentPane().add(nui);
+       
+       frame.setVisible(true);
+    }
+}
